@@ -150,8 +150,8 @@ def fourthpage():
 				if reach=='y':
 					flag=2
 
-					MY_ADDRESS = "heya0890@gmail.com"
-					PASSWORD = 'riagupta3496'
+					MY_ADDRESS = "abcd@xyz.com"	#write SENDER'S email address here
+					PASSWORD = 'password'		#write password of Sender
 		   
 					s = smtplib.SMTP(host='smtp.gmail.com', port=587)
 					s.starttls()
@@ -165,8 +165,8 @@ def fourthpage():
 
 					    # setup the parameters of the message
 					msg['From']=MY_ADDRESS
-					msg['To']="guptaria200@gmail.com"
-					msg['Subject']="returned"
+					msg['To']="xxx@yyy.com"		#enter reciever's email address
+					msg['Subject']="returned"	#subject of the email
 					        
 					    # add in the message body
 					msg.attach(MIMEText(message, 'plain'))
@@ -184,8 +184,8 @@ def fourthpage():
 					return redirect("secondpage1.html")
 				else:
 
-					MY_ADDRESS = "heya0890@gmail.com"
-					PASSWORD = 'riagupta3496'
+					MY_ADDRESS = "abcd@xyz.com"		#enter reciever's email address
+					PASSWORD = 'password'			#write password of Sender
 		   
 					s = smtplib.SMTP(host='smtp.gmail.com', port=587)
 					s.starttls()
@@ -199,8 +199,8 @@ def fourthpage():
 
 					    # setup the parameters of the message
 					msg['From']=MY_ADDRESS
-					msg['To']="guptaria200@gmail.com"
-					msg['Subject']="returned"
+					msg['To']="xxx@yyy.com"			#enter reciever's email address
+					msg['Subject']="returned"		#subject of the email
 					        
 					    # add in the message body
 					msg.attach(MIMEText(message, 'plain'))
